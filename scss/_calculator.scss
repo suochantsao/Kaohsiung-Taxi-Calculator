@@ -1,0 +1,90 @@
+//網頁所有物件
+.content{
+    max-width: 960px;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+//大標題
+h1{
+    font-size: $font-l;
+}
+h2{
+    font-size: $font-m;
+}
+
+//計算車資區塊
+.calculateBlock{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto;
+    line-height: 4rem;
+    color: $white;
+    background-color: $dark-green;
+
+    .title{
+        width: 100%;
+        margin: 1.5rem 0;
+        font-size: $font-m;
+        line-height: 5rem;
+    }
+    .inputBlock{
+
+        input{
+            text-align: center;
+            height: 2rem;
+        }
+    }
+    .kmInput{
+        width: 100%;
+    }
+    .timeInput{
+        width: 100%;
+        margin-bottom: 3rem;
+
+    }
+    .calculateButton{
+        width: 100%;
+        display: flex;
+
+        input{
+            display: block;
+            height: 80px;
+            width: 100%;
+            font-size: $font-s;
+        }
+    }
+}
+
+//計算結果區塊
+.resultBlock{
+    display: flex;
+    width: 100%;
+
+    .feeTitle{
+        width: 50%;
+        padding: 2% 0; 
+        background-color: $light-grey;
+    }
+    
+    input{
+        border: none;
+        margin-left: 10%;
+        background-color: $light-grey;
+        text-align: center;
+        width: 50%;
+        height: 2rem;
+        border-left: solid 0.2rem $dark-green;
+         
+    }
+    .nightFee{
+        color: $white;
+        background-color: $black;
+        
+        input{
+            color: $white;
+            background-color: $black;
+        }
+    }
+}
